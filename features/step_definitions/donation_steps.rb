@@ -9,3 +9,11 @@ When /^I should see the stripe form$/ do
     assert page.has_ccss?('iframe[name="stripe_checkout_app"]')
   end
 end
+
+Then /^"([^"]*)" should be enabled$/ do |button|
+  expect(page).to have_button(button, disabled: false)
+end
+
+Then /^"([^"]*)" should be disabled$/ do |button|
+  expect(page).to have_button(button, disabled: true)
+end
