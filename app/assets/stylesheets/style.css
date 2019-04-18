@@ -25,3 +25,7 @@ p {
 .bg-yellow {
 	background-color: #ffcc00!important;
 }
+
+.yellowFont {
+  color: #ffcc00;
+}
