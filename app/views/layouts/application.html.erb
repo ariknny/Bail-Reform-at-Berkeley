@@ -18,10 +18,14 @@
 
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-yellow">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand collapse navbar-collapse" href="/" id="navbarBrand">
         <%= image_tag "HomePageBailReformLogo.png", :class => "logo" %>
         Bail Reform at Berkeley
       </a>
+      <a id="logoCollapse" class="navbar-toggler no-border" data-toggle="collapse" data-target="#navbarBrand" aria-expanded="false" aria-label="Logo">
+        <%= image_tag "HomePageBailReformLogo.png", :class => "logo" %>
+      </a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
