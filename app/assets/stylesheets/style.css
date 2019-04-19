@@ -29,3 +29,7 @@ p {
 .yellowFont {
   color: #ffcc00;
 }
+
+mark {
+  background-color: #ffcc00;
+}
